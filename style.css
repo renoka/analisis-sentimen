@@ -1,0 +1,155 @@
+body{
+   font-family: Arial, sans-serif;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100vh;
+   background: linear-gradient(to right, #f0f0f0, #c0c0c0);
+   text-align: center;
+   zoom: 1;
+}
+
+
+.masukan{
+   text-align: center;
+   display: flex;
+   width: 400px;
+   height: 40px;
+   justify-content: center;
+   color: #000000;
+   margin-bottom: 15px;
+}
+div h3{
+   font-size: 18px;
+}
+
+#prediksi{
+   background-color: #206bff;
+   color: #fff;
+   padding: 5px 40px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+#prediksi:hover{
+   background-color: navy;
+}
+
+.prediksi2{
+   font-weight: bold;
+   color: #333;
+   margin-top: 20px;
+}
+
+button[type="submit"]{
+   background-color: #4CAF50;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 4px;
+}
+
+button:hover{
+   background-color: #3e8e41;
+}
+
+input[type="text"]{
+   width : 340px;
+   padding: 10px 10px 20px 10px;
+   padding-bottom: 10px;
+   border: 5px solid #251f1f;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   font-size: 15px;
+   text-align: center;
+}
+.emojis{
+   margin-top: 2px;
+   display: flex;
+   justify-content: center;
+}
+
+.emoji-container{
+   margin: 0 -25px;
+   text-align: center;
+   margin-top: 30px;
+}
+
+.emoji{
+   font-size: 50px;
+   padding-top: 20px;
+}
+
+.emoji-label{
+   margin-top: 5px;
+   font-size: 14px;
+   
+}
+
+.satu{
+   background-color: #fefefe;
+   text-align: center;
+   max-width: 400px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 30px;
+
+}
+
+.footer{
+   background-color: #333;
+   color: white;
+   /* text-align: center; */
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20px;
+   width: 450px;
+   bottom: 0;
+   left: -30px;
+   right: 0;
+   bottom: -30px;
+   padding: 5px;
+   margin: 0;
+}
+p{
+   height: 10px;
+   width: 200px;
+   justify-content: center;
+   text-align: center;
+   font-size: 10px;
+}
+
+
+nav{
+   background-color: #52f09f;
+   height: 30px;
+   width: 460px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   left: -30px;
+   top: -30px;
+   margin-bottom: 40px;
+}
+h1{
+   height: 80px;
+   width: 400px;
+   color: #0b0808;
+   justify-self: center;
+   text-align: center;
+   font-family :'Times New Roman', Times, serif;
+   font-size: 20px;
+   font-weight: bold;
+   margin: 0;
+}
