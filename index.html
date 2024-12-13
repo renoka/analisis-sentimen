@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Analisis Sentimen</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"> -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="satu">
+        <!-- <nav>
+            <p>sentimen analysis</p>
+        </nav> -->
+        <h1>Analisis sentimen produk hp oppo</h1>
+            <img src="images/orbit.png" alt="">
+            <form action="{{ url_for('predict')}}" method="post">
+            <input type="text" name="Masukan ulasan produk hp oppo" placeholder="Masukan Ulasan Disini" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large" id="prediksi">Prediksi Sentimen
+            </button><br>
+            
+            <div class="emojis">
+                <div class="emoji-container">
+                    <span class="emoji">😊</span>
+                    <p class="emoji-label">Positif</p>
+                </div>
+                <div class="emoji-container">
+                    <span class="emoji">😐</span>
+                    <p class="emoji-laber">Netral</p>
+                </div>
+                <div class="emoji-container">
+                    <span class="emoji">😡</span>
+                    <p class="emoji-label">Negatif</p>
+                </div>                
+            </div>
+
+        </form>
+        <br>
+        <br>
+        <div class="prediksi2">
+        {{ prediction }}
+        </div>
+    </div> 
+    <!-- <div class="footer">
+            <p>© 2024 Analisis Sentimen Produk HP Oppo</p>
+        </div>
+    </div> -->
+</body>
+</html>
